@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/team-17-scorer/static/css/main.39f589df.css",
+    "main.js": "/team-17-scorer/static/js/main.6474f674.js",
+    "static/js/787.4ef7427d.chunk.js": "/team-17-scorer/static/js/787.4ef7427d.chunk.js",
+    "index.html": "/team-17-scorer/index.html",
+    "main.39f589df.css.map": "/team-17-scorer/static/css/main.39f589df.css.map",
+    "main.6474f674.js.map": "/team-17-scorer/static/js/main.6474f674.js.map",
+    "787.4ef7427d.chunk.js.map": "/team-17-scorer/static/js/787.4ef7427d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39f589df.css",
+    "static/js/main.6474f674.js"
+  ]
+}
