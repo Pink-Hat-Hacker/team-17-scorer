@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./App.css";
+import { Counter } from "./Components/Counter";
+import { MultipleCounters } from "./Components/MultiCounters";
 
 function App(): JSX.Element {
     const [currentScore, setCurrentScore] = useState<number>(0);
@@ -24,49 +26,11 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <div>Welcome to Score Counter!</div>
-            {/* <Counter></Counter> */}
+            <p>Task C and E</p>
+            <Counter></Counter>
+            <p>Task D</p>
+            <MultipleCounters></MultipleCounters>
             <p>Team 17</p>
-            <h3> C and E </h3>
-            <div>
-                <Button onClick={increaseScore}>Increase Score</Button>
-                <Button onClick={decreaseScore}>Decrease Score</Button>
-                <div>Current Score = {currentScore}</div>
-            </div>
-            <br></br>
-            <h3> D </h3>
-            <div>
-                {/* button A */}
-                <Button
-                    onClick={() =>
-                        setCounter({ ...state, counterA: state.counterA + 1 })
-                    }
-                >
-                    <span>Custom A</span>
-                </Button>
-                <div>Counter = {state.counterA}</div>
-            </div>
-            <div>
-                {/* button B */}
-                <Button
-                    onClick={() =>
-                        setCounter({ ...state, counterB: state.counterB + 1 })
-                    }
-                >
-                    <span>Custom B</span>
-                </Button>
-                <div>Counter = {state.counterB}</div>
-            </div>
-            <div>
-                {/* button C */}
-                <Button
-                    onClick={() =>
-                        setCounter({ ...state, counterC: state.counterC + 1 })
-                    }
-                >
-                    <span>Custom C</span>
-                </Button>
-                <div>Counter = {state.counterC}</div>
-            </div>
         </div>
     );
 }
