@@ -9,10 +9,15 @@ function App(): JSX.Element {
         setCurrentScore(currentScore - 1);
     }
 
+    function increaseScore() {
+        setCurrentScore(currentScore + 1);
+    }
+
     return (
         <div className="App">
+            <Button onClick={increaseScore}>Increase Score</Button>
             <Button onClick={decreaseScore}>Decrease Score</Button>
-            <div>{currentScore}</div>
+            <div>Current Score = {currentScore}</div>
         </div>
     );
 }
