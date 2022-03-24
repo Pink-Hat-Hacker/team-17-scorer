@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { Counter } from "./Components/Counter";
-import { MultipleCounters } from "./Components/MultiCounters";
 
 function App(): JSX.Element {
     return (
@@ -10,11 +9,11 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <div>Welcome to Score Counter!</div>
-            <p>Task C and E</p>
-            <Counter></Counter>
-            <p>Task D</p>
-            <MultipleCounters></MultipleCounters>
-            <p>Team 17</p>
+            <Counter label="Custom Label" initialCount={0}></Counter>
+            <Counter label="Custom Lable 1" initialCount={0}></Counter>
+            <Counter label="Custom Lable 2" initialCount={0}></Counter>
+            <Counter label="Custom Lable 3" initialCount={0}></Counter>
+            <footer>Team 17</footer>
         </div>
     );
 }

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-export function Counter(): JSX.Element {
-    const [counter, setCount] = useState<number>(0);
-
+export function Counter({
+    label,
+    initialCount
+}: {
+    label: string;
+    initialCount: number;
+}): JSX.Element {
+    const [counter, setCount] = useState<number>(initialCount);
     function addCount(): void {
         setCount(counter + 1);
     }
@@ -12,7 +17,9 @@ export function Counter(): JSX.Element {
     }
     return (
         <div>
-            <div>Counter = {counter}</div>
+            <div>
+                {label}: Counter = {counter}
+            </div>
             <Button onClick={addCount}>Increase</Button>
             <Button onClick={decreaseCount}>Decrease</Button>
         </div>
